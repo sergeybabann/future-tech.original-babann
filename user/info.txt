@@ -1,7 +1,9 @@
-video stop: 58.10 Шапка страницы
+video stop: 1.18.16
 
 video url: https://www.youtube.com/watch?v=hkYzqTKnSIg&t=2220s 
 
+github repo: 
+https://github.com/sergeybabann/future-tech.original-babann
 
 ---------- commands ----------
 sass watcher - запустить
