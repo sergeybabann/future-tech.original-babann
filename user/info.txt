@@ -1,3 +1,8 @@
-video stop: 37.00 Заполнение глобальных CSS-переменных
+video stop: 58.10 Шапка страницы
 
 video url: https://www.youtube.com/watch?v=hkYzqTKnSIg&t=2220s 
+
+
+---------- commands ----------
+sass watcher - запустить
+npm run sass-watch
