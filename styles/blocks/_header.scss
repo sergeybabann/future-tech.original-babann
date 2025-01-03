@@ -5,6 +5,10 @@
     padding-block: rem(20);
     text-align: center;
     border-bottom: var(--border);
+
+    @include mobile {
+      padding-block: rem(14);
+    }
   }
 
   &__body {
@@ -24,6 +28,24 @@
       // на экранах 768px и более, то есть на экранах не мобильных устройств мы отключили оберкту header__overlay в html-разметке
       display: contents;
     }
+
+    @include mobile {
+      position: fixed;
+      inset: 0; // фиксированное позиционирование со всех сторон, так мы растянем элемент на весь экран
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 3rem;
+      padding: 1rem;
+      background-color: var(--color-dark-10);
+      transition-duration: var(--transition-duration);
+
+      &:not(.is-active) {
+        @include hide;
+
+        translate: (100%);
+      }
+    }
   }
 
   &__menu {
@@ -31,13 +53,24 @@
       display: flex;
       align-items: center;
       column-gap: rem(16);
+
+      @include laptop {
+        column-gap: rem(6);
+      }
+
+      @include mobile {
+        flex-direction: column;
+        row-gap: 1rem;
+      }
     }
 
     &-link {
-      padding: rem(14) rem(24);
-      // rem(14)вертикальный padding
-      // rem(24)горизонтальный padding
+      padding: rem(14) rem(24); // 14-вертикальный, 24-горизонтальный
       color: var(--color-gray-50);
+
+      @include laptop {
+        padding: rem(10) rem(18); // 10-вертикальный , 18-горизонтальный
+      }
 
       &.is-active {
         color: var(--color-light);
@@ -47,6 +80,14 @@
         border-radius: rem(10);
         pointer-events: none; // скрытие эффекта наведения на ссылку
       }
+    }
+  }
+
+  &__contact-us-link {
+    @include mobile {
+      width: 100%;
+      max-width: rem(300);
+      align-self: center;
     }
   }
 }

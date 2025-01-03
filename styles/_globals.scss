@@ -102,3 +102,16 @@ a {
   ); // смещение обводки на 4px от внешнего контура фокусированного элемента
   transition-duration: 0s !important; // !important для того чтобы избежать возможных конфликтов стилей
 }
+
+a,
+button {
+  &[aria-label] {
+    position: relative;
+
+    &::before {
+      @include abs-center; // центрирование для абсолютного по центру элемента
+      @include square(rem(44));
+      content: '';
+    }
+  }
+}

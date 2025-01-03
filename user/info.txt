@@ -1,4 +1,4 @@
-video stop: 1.36.10 - desktop шапки выполнен
+video stop: 1.52.04
 
 video url: https://www.youtube.com/watch?v=hkYzqTKnSIg&t=2220s 
 
