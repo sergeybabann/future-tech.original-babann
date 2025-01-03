@@ -6,4 +6,47 @@
     text-align: center;
     border-bottom: var(--border);
   }
+
+  &__body {
+    padding-block: rem(24);
+    background-color: var(--color-dark-10);
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 1rem;
+    }
+  }
+
+  &__overlay {
+    @include mobile-above {
+      // на экранах 768px и более, то есть на экранах не мобильных устройств мы отключили оберкту header__overlay в html-разметке
+      display: contents;
+    }
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: rem(16);
+    }
+
+    &-link {
+      padding: rem(14) rem(24);
+      // rem(14)вертикальный padding
+      // rem(24)горизонтальный padding
+      color: var(--color-gray-50);
+
+      &.is-active {
+        color: var(--color-light);
+        background-color: var(--color-dark);
+        font-weight: 500;
+        border: var(--border);
+        border-radius: rem(10);
+        pointer-events: none; // скрытие эффекта наведения на ссылку
+      }
+    }
+  }
 }
