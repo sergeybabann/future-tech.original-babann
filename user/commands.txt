@@ -1,0 +1,4 @@
+---------- commands ----------
+
+sass watcher - запустить
+npm run sass-watch

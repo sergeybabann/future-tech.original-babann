@@ -1,4 +1,4 @@
-video stop: 1.52.04
+video stop: 1.53.40
 
 video url: https://www.youtube.com/watch?v=hkYzqTKnSIg&t=2220s 
 
@@ -8,3 +8,8 @@ https://github.com/sergeybabann/future-tech.original-babann
 ---------- commands ----------
 sass watcher - запустить
 npm run sass-watch
+
+
+Пока сделаю паузу с этой версткой. Есть несхождения с автором. 
+Она для меня сложная пока. Нужно поверстать что-то попроще. Позже к ней вернусь.
+video stop: 1.53.40
